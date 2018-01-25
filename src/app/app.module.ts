@@ -10,6 +10,9 @@ import { AngularFireModule } from 'angularfire2/index';
 
 import { CadastroPessoaModule } from './cadastro-pessoa/cadastro-pessoa.module';
 
+import { LoginModule } from './login/login.module';
+import { AppRoutingModule } from './app.routing.module';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +22,9 @@ import { CadastroPessoaModule } from './cadastro-pessoa/cadastro-pessoa.module';
     BrowserModule,
     FormsModule,
     HttpModule, CadastroPessoaModule,
-    AngularFireModule.initializeApp(FirebaseConfig)
-
+    AngularFireModule.initializeApp(FirebaseConfig),
+    AppRoutingModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
