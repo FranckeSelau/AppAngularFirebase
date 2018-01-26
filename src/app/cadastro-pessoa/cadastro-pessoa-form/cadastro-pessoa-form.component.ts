@@ -37,6 +37,6 @@ export class CadastroPessoaFormComponent implements OnInit {
   }
   form_logout() {
     this.afAuth.auth.signOut();
-    this.router.navigate([""]);
+    this.router.navigate(['/login']);
   }
 }
